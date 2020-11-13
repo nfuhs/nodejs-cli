@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-cli",
+  "version": "1.0.0",
+  "description": "Simple CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfuhs/nodejs-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "nodejs"
+  ],
+  "author": "Norbert Fuhs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nfuhs/nodejs-cli/issues"
+  },
+  "homepage": "https://github.com/nfuhs/nodejs-cli#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "shelljs": "^0.8.4"
+  }
+}
