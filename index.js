@@ -35,7 +35,11 @@ const askQuestions = () => {
     ];
     return inquirer.prompt(questions);
 };
-
+const createFile = (filename, extension) => {
+    const filePath = `${process.cwd()}/${filename}.${extension}`
+    shell.touch(filePath);
+    return filePath;
+};
 
 const run = async() => {
     // show script introduction
@@ -43,9 +47,10 @@ const run = async() => {
 
     // ask questions
     const answers = await askQuestions();
-    const { FIILENAME, EXTENSION } = answers;
+    const { FILENAME, EXTENSION } = answers;
 
     // create the file
+    const filePath = createFile(FILENAME, EXTENSION);
     // show success message
 };
 
