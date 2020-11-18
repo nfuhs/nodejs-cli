@@ -41,6 +41,12 @@ const createFile = (filename, extension) => {
     return filePath;
 };
 
+const success = (filepath) => {
+    console.log(
+        chalk.white.bgGreen.bold(`Done! File created at ${filepath}`)
+    );
+};
+
 const run = async() => {
     // show script introduction
     init();
@@ -51,7 +57,9 @@ const run = async() => {
 
     // create the file
     const filePath = createFile(FILENAME, EXTENSION);
+
     // show success message
+    success(filePath);
 };
 
 run();
